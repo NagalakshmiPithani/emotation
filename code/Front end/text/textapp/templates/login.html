@@ -1,0 +1,20 @@
+{%extends 'base.html'%}
+{% block code %}
+<div class="head_text_r">
+<form action="" method="post">
+                {% csrf_token %}
+               <center >
+              <table style="height:100px;">
+              {{ login_form }}
+            </table>
+              </center>
+              <br>
+              <button type="submit" class="button"><span>Submit</span></button>
+      
+            </div>
+          </form>
+</div>
+<div class="img_mod_r">
+<p></p>
+</div>
+{% endblock %}

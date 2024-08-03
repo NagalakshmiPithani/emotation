@@ -1,0 +1,31 @@
+{%extends 'base2.html'%}
+{% block code %}
+<div class="head_text_m">
+<form action="" enctype="multipart/form-data" method="post">
+        
+        {% csrf_token %}
+      <center><label for="algo" style="color:white;"><h3> :Select algorihtms: </h3></label>
+            <br>
+            <h2>
+              <select name="algo" id="algo" style="width:200px; height:30px">
+              <option value="">choos Module</option>
+              <option value="1">DecisionTreeClassifier</option>
+              <option value="2">Random Forest</option>
+              <option value="3">LSTM</option>
+              
+            
+
+            </select>
+            <br><br>
+            <button type="submit" class="button"><span>Submit</span></button>
+            <div class="providing_section layout_padding">
+            </center>
+            <center><h2><b style="color: black;">{{msg}}</b></h2></center>
+          </h2>
+            </div>
+        
+       </div>
+       
+      </form>
+</div>
+{% endblock %}

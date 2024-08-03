@@ -1,0 +1,22 @@
+{%extends 'base2.html'%}
+{% block code %}
+<div class="head_text_m">
+ <form action="" enctype="multipart/form-data" method="post">
+
+        
+        {% csrf_token %}
+      <center><label for="algo" style="color:black;"><h3><b>:Type a Emotion Text: </b></h3></label>
+            <br>
+            <h2>
+
+            <input  type="text" style="height: 50px; width: 1000px;" name = "input">
+            <br><br>
+            <button type="submit" class="button"><span>Submit</span></button>
+            </center>
+            <h2><b style="color: red;">{{msg}}</b></h2>
+          </h2>
+            </div>
+       </div>
+      </form>
+</div>
+{% endblock %}
